@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fuel Usage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <form action="">
+        <label for="distance">
+          Dystans do przejechania:
+          <input step="0.01" type="number" id="distance" />
+        </label>
+
+        <label for="averageConsumption">
+          Średnie zużycie paliwa:
+          <input step="0.1" type="number" id="averageConsumption" />
+        </label>
+        <label for="price"
+          >Cena za litr paliwa: <input step="0.01" type="number" id="price" />
+        </label>
+        <p class="error"></p>
+
+        <button type="button" id="calculate">Oblicz</button>
+        <div id="result"></div>
+      </form>
+      <canvas id="fuelChart" width="400" height="200"></canvas>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
